@@ -314,6 +314,7 @@ print()
 print("The {} jumped over the {}".format(animal, item))
 print("The {0} jumped over the {1}".format(item, animal))  # Positional Argument
 print("The {animal} jumped over the {item}".format(item="moon", animal="cow"))  # Keyword Argument
+print(f"The {animal} jumped over the {item}")  # with fstring we pass only variable name
 
 text = "The {} jumped over the {}"
 print(text.format(animal, item))
