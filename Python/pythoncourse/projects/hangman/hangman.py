@@ -1,6 +1,7 @@
 import random
 from words import words
 import string
+from hangman_visual import lives_visual_dict
 
 def get_valid_word(words):
     word = random.choice(words)
@@ -19,6 +20,9 @@ def hangman():
    
     # getting user input
     while len(word_letters) > 0 and lives > 0 :
+        # Display hangman ascii image
+        print(lives_visual_dict[lives])
+        
         # letters used
         # ' '.join(['a', 'b', 'cd']) => "a b cd"
         print("You have ", lives, " lives left and used these letters: ", " ".join(used_letters))

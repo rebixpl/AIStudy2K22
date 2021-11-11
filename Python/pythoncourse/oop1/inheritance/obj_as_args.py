@@ -52,3 +52,5 @@ person = Person()
 
 person.catch(duck)
 person.catch(chicken)
+print()
+
